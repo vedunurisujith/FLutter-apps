@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 
-void main() => runApp(MyApp());
+void main() {
+  runApp(MyApp());
+}
 
 class MyApp extends StatefulWidget {
   @override
@@ -10,12 +12,14 @@ class MyApp extends StatefulWidget {
 class _MyAppState extends State<MyApp> {
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(home:Scaffold(
+    return MaterialApp(
+        home: Scaffold(
       appBar: AppBar(
-        title: Text('demo'),
+        title: Text('Demo'),
       ),
       body: Center(
-        child: Text('vedunuri sujith'),
+        child: Image.network(
+            'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSLw8UoNtxMwrWjDqWYhYo1jbfioqJuBw79b7xZv7Uz&s'),
       ),
     ));
   }
